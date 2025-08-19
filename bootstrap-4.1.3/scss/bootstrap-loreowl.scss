@@ -1,0 +1,70 @@
+
+// ============================
+// LoreOwl Bootstrap Customizado
+// ============================
+
+// Fonte (Google Fonts)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+// ----------------------------
+// Variáveis personalizadas
+// ----------------------------
+$primary:   #6f42c1 !default; // Roxo principal LoreOwl
+$secondary: #9c6ade !default; // Roxo claro
+$dark:      #1a1a1a !default; // Fundo escuro
+$light:     #f8f9fa !default; // Fundo claro
+
+$font-family-base: 'Poppins', sans-serif;
+
+$success:   #28a745 !default;
+$danger:    #dc3545 !default;
+$warning:   #ffc107 !default;
+$info:      #17a2b8 !default;
+
+// ----------------------------
+// Importando Bootstrap
+// (altere o caminho conforme sua pasta)
+// ----------------------------
+@import "../bootstrap-4.1.3/scss/bootstrap";
+
+// ----------------------------
+// Customizações extras LoreOwl
+// ----------------------------
+
+// Botões com gradiente roxo
+.btn-primary {
+  background: linear-gradient(45deg, #6f42c1, #9c6ade);
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #5a32a3, #8256d0);
+  transform: scale(1.05);
+}
+
+// Cards com sombra suave
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+// Navbar roxa
+.navbar {
+  background-color: $primary !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  transition: 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: $secondary !important;
+}
