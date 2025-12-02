@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimentos-Infraestrutura</title>
+    <link rel="icon" href="./imagem/logo.png">
+</head>
+<body>
+    
+<header style="padding:12px;background:#0b5; color:#033; font-weight:700;">
+    Painel de Atendimentos
+</header>
+
+<nav style="display:flex;gap:8px;padding:12px;background:#f4f4f4;border-bottom:1px solid #ddd">
+    <button class="tab" data-tab="para">Atendimentos para ser realizados <span class="count" id="count-para">0</span></button>
+    <button class="tab" data-tab="realizado">Atendimentos realizados <span class="count" id="count-realizado">0</span></button>
+    <button class="tab" data-tab="atrasado">Atendimentos atrasados <span class="count" id="count-atrasado">0</span></button>
+    <button class="tab" data-tab="resolvido">Atendimentos resolvidos <span class="count" id="count-resolvido">0</span></button>
+    <div style="flex:1"></div>
+    <small style="align-self:center;color:#666">Recebe dados via window.postMessage({atendimento: {...}}) ou ?data=[JSON]</small>
+</nav>
+
+
+
+<main style="padding:16px;">
+    <button id="btnLimparResolvidos" class="btn" style="display:none;margin-bottom:10px;">
+    Limpar resolvidos
+</button>
+
+
+    <div id="cards" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px"></div>
+</main>
+
+<div id="toast" style="position:fixed;right:16px;bottom:16px;min-width:180px;padding:10px 14px;background:#222;color:#fff;border-radius:6px;opacity:0;transform:translateY(10px);transition:all .28s ease;pointer-events:none"></div>
+
+<style>
+    .card { background:#fff;border:1px solid #e0e0e0;padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.04) }
+    .card h4{margin:0 0 6px;font-size:16px}
+    .meta{font-size:13px;color:#666;margin-bottom:8px}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;background:#eee;color:#333}
+    .btn{padding:8px 10px;border:0;background:#0b79cc;color:#fff;border-radius:6px;cursor:pointer}
+    .btn:active{transform:translateY(1px)}
+    .btn-secondary{background:#777}
+    .tab.active{background:#0b79cc;color:#fff;border:0;padding:6px 10px;border-radius:6px;cursor:pointer}
+    .tab{background:transparent;border:1px solid #ddd;padding:6px 10px;border-radius:6px;cursor:pointer}
+</style>
+
+<script src="./js/resolver.js">
+
+</script>
+
+</body>
+</html>

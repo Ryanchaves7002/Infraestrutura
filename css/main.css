@@ -1,0 +1,187 @@
+:root{
+    --primary-color: #80c342;
+    --secondary-color: #3a9d2e;
+    --terciary-color: #0072bc;
+    --quaternary-color: #FFC107;
+    --bg-color : linear-gradient(90deg,var(--primary-color), var(--secondary-color), var(--terciary-color));
+    --font-size: 12px;
+    --line-height: 1.5;
+    --letter-spacing: 0.5px;
+    --text-transform: uppercase;
+    --font-weight: bold;
+    --font-style: italic;
+    --text-decoration: underline;
+    --font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+    --border-radius: 10px;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1rem;
+    --text-align: center;
+    --margin-right-negative-250px: -250px;
+    --h5-font-size: 1.25rem;
+    --h6-font-size: 1rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bg-color);
+    font-size: var(--font-size);
+    text-transform: var(--text-transform);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    font-family: var(--font-family);
+}
+.infra-header{
+
+        padding: 3rem 1rem;
+        text-align: var(--text-align);
+        color: #ffffff;
+        background: rgba(0,0,0,0.12);
+        backdrop-filter: blur(4px);
+    }
+
+   
+    .infra-title{
+        font-size: var(--h1-font-size);
+        margin-bottom: 0.5rem;
+        line-height: 1.05;
+        letter-spacing: var(--letter-spacing);
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .infra-subtitle{
+        font-size: var(--h4-font-size);
+        color: rgba(255,255,255,0.95);
+        margin-top: 0.25rem;
+        font-weight: 600;
+        opacity: 0.95;
+    }
+
+   
+    .infra-viewport{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem 4rem;
+    }
+
+   
+    .infra-card{
+        width: 100%;
+        max-width: 820px;
+        background: rgba(255,255,255,0.98);
+        border-radius: var(--border-radius);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        padding: 1.5rem;
+    }
+
+   
+    .infra-form{
+        width: 100%;
+        display: block;
+    }
+
+ 
+    .infra-row{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .infra-col-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .infra-col-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    
+    .infra-label{
+        display: block;
+        margin-bottom: 0.4rem;
+        font-size: 0.85rem;
+        color: #264d00;
+        font-weight: 700;
+        text-transform: none;
+    }
+
+    .infra-input,
+    .infra-textarea{
+        width: 100%;
+        padding: 0.65rem 0.75rem;
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: 8px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        background: #fff;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        resize: vertical;
+        color: #0a0a0a;
+        outline: none;
+    }
+
+    
+    .infra-input:focus,
+    .infra-textarea:focus{
+        border-color: var(--terciary-color);
+        box-shadow: 0 0 0 3px rgba(0,114,188,0.08);
+    }
+
+    
+    .infra-actions{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0.5rem;
+    }
+
+    .infra-btn{
+        background: var(--primary-color);
+        color: #fff;
+        padding: 0.6rem 1.1rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        transition: background-color 0.15s ease, transform 0.08s ease;
+    }
+
+    .infra-btn:hover{
+        background: var(--secondary-color);
+        transform: translateY(-1px);
+    }
+
+    .infra-btn:active{
+        transform: translateY(0);
+    }
+
+   
+    @media (max-width: 768px){
+        .infra-col-6,
+        .infra-col-12{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .infra-header{
+            padding: 2rem 1rem;
+        }
+
+        .infra-title{
+            font-size: 1.6rem;
+        }
+
+        .infra-card{
+            padding: 1rem;
+        }
+    }
+
+
