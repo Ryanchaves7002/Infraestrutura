@@ -4,6 +4,7 @@
     --terciary-color: #0072bc;
     --quaternary-color: #FFC107;
     --bg-color : linear-gradient(90deg,var(--primary-color), var(--secondary-color), var(--terciary-color));
+    --bg-
     --font-size: 12px;
     --line-height: 1.5;
     --letter-spacing: 0.5px;
