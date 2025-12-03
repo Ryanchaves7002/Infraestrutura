@@ -4,7 +4,7 @@
     --terciary-color: #0072bc;
     --quaternary-color: #FFC107;
     --bg-color : linear-gradient(90deg,var(--primary-color), var(--secondary-color), var(--terciary-color));
-    --bg-
+    
     --font-size: 12px;
     --line-height: 1.5;
     --letter-spacing: 0.5px;
@@ -173,7 +173,14 @@ body{
         }
 
         .infra-header{
-            padding: 2rem 1rem;
+            padding: 1rem;
+            text-align: left;
+            background: rgba(0,0,0,0.06);
+            backdrop-filter: none;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
         }
 
         .infra-title{
@@ -183,6 +190,99 @@ body{
         .infra-card{
             padding: 1rem;
         }
-    }
+        .nav-resolver{  
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+                justify-content: flex-start;
+                margin-left: 30px;
+            }
+
+            /* top row: brand + toggle button (if present) */
+            .nav-resolver .nav-bar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 0.5rem;
+            }
+
+            /* hamburger / toggle button styling (for markup that includes a button) */
+            .nav-resolver .nav-toggle{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+                background: rgba(0,0,0,0.06);
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+            }
+
+            /* stack links vertically and make them full width */
+            .nav-resolver .nav-list{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+                margin-top: 0.25rem;
+            }
+
+            /* individual items take full width so touch targets are easy */
+            .nav-resolver .nav-item{
+                width: 100%;
+            }
+
+            /* link/button appearance for nav items */
+            .nav-resolver .nav-link{
+                display: block;
+                width: 100%;
+                padding: 0.65rem 0.75rem;
+                border-radius: 8px;
+                background: rgba(255,255,255,0.95);
+                color: #264d00;
+                text-decoration: none;
+                font-weight: 700;
+                transition: background-color 0.15s ease, transform 0.08s ease;
+                text-align: left;
+            }
+
+            /* hover / active affordances */
+            .nav-resolver .nav-link:hover{
+                background: rgba(0,0,0,0.04);
+                transform: translateY(-1px);
+            }
+            .nav-resolver .nav-link:active{
+                transform: translateY(0);
+            }
+
+            /* optional collapse behavior using a class toggle (works with JS adding/removing .open) */
+            .nav-resolver .nav-list{
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.28s ease;
+            }
+            .nav-resolver.open .nav-list{
+                max-height: 800px; /* large enough to show full menu */
+            }
+
+            /* ensure good spacing when inside the card */
+            .nav-resolver{
+                padding: 0.5rem;
+                background: transparent;
+                border-radius: 8px;
+            }
+            #cards{
+                width: 20px;
+                display: block;
+                flex-direction: column;
+            }
+        }
+        
+    
 
 
