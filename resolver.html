@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="bg-color">
-    
 <header  style="padding:12px; color:#033; font-weight:700;">
     Painel de Atendimentos
 </header>
-
 <nav style="display:flex;gap:8px;padding:12px;background:#f4f4f4;border-bottom:1px solid #ddd">
     <button class="tab" data-tab="para">Atendimentos para ser realizados <span class="count" id="count-para">0</span></button>
     <button class="tab" data-tab="realizado">Atendimentos realizados <span class="count" id="count-realizado">0</span></button>
@@ -21,20 +19,13 @@
     <div style="flex:1"></div>
     <small style="align-self:center;color:#666">Recebe dados via window.postMessage({atendimento: {...}}) ou ?data=[JSON]</small>
 </nav>
-
-
-
 <main style="padding:16px;">
     <button id="btnLimparResolvidos" class="btn" style="display:none;margin-bottom:10px;">
     Limpar resolvidos
 </button>
-
-
     <div id="cards" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px"></div>
 </main>
-
 <div id="toast" style="position:fixed;right:16px;bottom:16px;min-width:180px;padding:10px 14px;background:#222;color:#fff;border-radius:6px;opacity:0;transform:translateY(10px);transition:all .28s ease;pointer-events:none"></div>
-
 <style>
     .card { background:#fff;border:1px solid #e0e0e0;padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.04) }
     .card h4{margin:0 0 6px;font-size:16px}
@@ -46,10 +37,7 @@
     .tab.active{background:#0b79cc;color:#fff;border:0;padding:6px 10px;border-radius:6px;cursor:pointer}
     .tab{background:transparent;border:1px solid #ddd;padding:6px 10px;border-radius:6px;cursor:pointer}
 </style>
-
 <script src="./js/resolver.js">
-
 </script>
-
 </body>
 </html>

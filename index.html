@@ -1,115 +1,100 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-      <head>
-        <!-- Meta tags Obrigatórias -->
-        <meta charset="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="icon" href="./imagem/logo.png" />
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="./imagem/logo.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Secretaria de infraestrutura</title>
+</head>
+<body class="infra-body">
+  <header class="infra-header">
+    <h1 class="infra-title">Seja bem vindo ao site da infraestrutura!</h1>
+    <p class="infra-subtitle">Qual o serviço que você precisa ?</p>
+  </header>
 
-        <!-- Bootstrap CSS (opcional, mantido para compatibilidade) -->
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./css/bootstrap.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <title>Secretaria de infraestrutura</title>
-      </head>
-      <body class="infra-body">
-        <header class="infra-header">
-          <h1 class="infra-title">Seja bem vindo ao site da infraestrutura!</h1>
-          <p class="infra-subtitle">Qual o serviço que você precisa ?</p>
-        </header>
+  <main class="infra-viewport">
+    <section class="infra-card" aria-labelledby="form-heading">
+      <h2 id="form-heading" class="visually-hidden">Formulário de contato</h2>
+      <form class="infra-form" novalidate>
+        <div class="infra-row">
+          <div class="infra-col-6">
+            <label class="infra-label" for="nome">Nome</label>
+            <input id="nome" class="infra-input" type="text" placeholder="Nome" />
+          </div>
+          <div class="infra-col-6">
+            <label class="infra-label" for="sobrenome">Sobrenome</label>
+            <input id="sobrenome" class="infra-input" type="text" placeholder="Sobrenome" />
+          </div>
+        </div>
 
-        <main class="infra-viewport">
-          <section class="infra-card" aria-labelledby="form-heading">
-            <h2 id="form-heading" class="visually-hidden">Formulário de contato</h2>
-            <form class="infra-form" novalidate>
-              <div class="infra-row">
-                <div class="infra-col-6">
-                  <label class="infra-label" for="nome">Nome</label>
-                  <input id="nome" class="infra-input" type="text" placeholder="Nome" />
-                </div>
-                <div class="infra-col-6">
-                  <label class="infra-label" for="sobrenome">Sobrenome</label>
-                  <input id="sobrenome" class="infra-input" type="text" placeholder="Sobrenome" />
-                </div>
-              </div>
+        <div class="infra-row">
+          <div class="infra-col-12">
+            <label class="infra-label" for="email">Email</label>
+            <input id="email" class="infra-input" type="email" placeholder="Email" />
+          </div>
+        </div>
 
-              <div class="infra-row">
-                <div class="infra-col-12">
-                  <label class="infra-label" for="email">Email</label>
-                  <input id="email" class="infra-input" type="email" placeholder="Email" />
-                </div>
-              </div>
+        <div class="infra-row">
+          <div class="infra-col-12">
+            <label class="infra-label" for="telefone">Telefone</label>
+            <input id="telefone" class="infra-input" type="tel" placeholder="(xx) xxxxx-xxxx" />
+          </div>
+        </div>
 
-              <div class="infra-row">
-                <div class="infra-col-12">
-                  <label class="infra-label" for="telefone">Telefone</label>
-                  <input id="telefone" class="infra-input" type="tel" placeholder="(xx) xxxxx-xxxx" />
-                </div>
-              </div>
+        <div class="infra-row">
+          <div class="infra-col-12">
+            <label class="infra-label" for="endereco">Endereço</label>
+            <input id="endereco" class="infra-input" type="text" placeholder="Rua tal, nº 0" />
+          </div>
+        </div>
 
-              <div class="infra-row">
-                <div class="infra-col-12">
-                  <label class="infra-label" for="endereco">Endereço</label>
-                  <input id="endereco" class="infra-input" type="text" placeholder="Rua tal, nº 0" />
-                </div>
-              </div>
+        <div class="infra-row">
+          <div class="infra-col-12">
+            <label class="infra-label" for="referencia">Ponto de referência</label>
+            <input id="referencia" class="infra-input" type="text" placeholder="Apartamento, hotel, casa, etc." />
+          </div>
+        </div>
 
-              <div class="infra-row">
-                <div class="infra-col-12">
-                  <label class="infra-label" for="referencia">Ponto de referência</label>
-                  <input id="referencia" class="infra-input" type="text" placeholder="Apartamento, hotel, casa, etc." />
-                </div>
-              </div>
+        <div class="infra-row">
+          <div class="infra-col-6">
+            <label class="infra-label" for="cidade">Cidade</label>
+            <input id="cidade" class="infra-input" type="text" />
+          </div>
+          <div class="infra-col-6">
+            <label class="infra-label" for="cep">CEP</label>
+            <input id="cep" class="infra-input" type="text" />
+          </div>
+        </div>
 
-              <div class="infra-row">
-                <div class="infra-col-6">
-                  <label class="infra-label" for="cidade">Cidade</label>
-                  <input id="cidade" class="infra-input" type="text" />
-                </div>
-                <div class="infra-col-6">
-                  <label class="infra-label" for="cep">CEP</label>
-                  <input id="cep" class="infra-input" type="text" />
-                </div>
-              </div>
+        <div class="infra-row">
+          <div class="infra-col-12">
+            <label class="infra-label" for="descricao">Descreva seu problema</label>
+            <textarea id="descricao" class="infra-textarea" rows="4" placeholder="Explique aqui..."></textarea>
+          </div>
+        </div>
 
-              <div class="infra-row">
-                <div class="infra-col-12">
-                  <label class="infra-label" for="descricao">Descreva seu problema</label>
-                  <textarea id="descricao" class="infra-textarea" rows="4" placeholder="Explique aqui..."></textarea>
-                </div>
-              </div>
+        <div class="infra-actions">
+          <button type="submit" class="infra-btn">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
-              <div class="infra-actions">
-                <button type="submit" class="infra-btn">Enviar</button>
-              </div>
-            </form>
-          </section>
-        </main>
+  <!-- JavaScript (Opcional) -->
+  <script src="./js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
 
-        <!-- JavaScript (Opcional) -->
-          <script src="./js/index.js"></script>
-        <script
-          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"
-        ></script>
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-          crossorigin="anonymous"
-        ></script>
-        <script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-          crossorigin="anonymous"
-        ></script>
-      </body>
-    </html>
+</html>
