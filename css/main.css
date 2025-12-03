@@ -276,11 +276,7 @@ body{
                 background: transparent;
                 border-radius: 8px;
             }
-            #cards{
-                width: 20px;
-                display: block;
-                flex-direction: column;
-            }
+            
         }
         
     
