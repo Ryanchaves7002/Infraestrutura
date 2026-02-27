@@ -3,6 +3,7 @@
     --secondary-color: #3a9d2e;
     --terciary-color: #0072bc;
     --quaternary-color: #FFC107;
+    --quintary-color: #f50000;
     --bg-color : linear-gradient(90deg,var(--primary-color), var(--secondary-color), var(--terciary-color));
     
     --font-size: 12px;
